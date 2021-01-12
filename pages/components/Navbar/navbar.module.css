@@ -1,0 +1,54 @@
+.navbar{
+    height: 13vh;
+    width: 100vw;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 5%;
+    background-color:rgba(255, 251, 251, 0.9);;
+  }
+
+  .NavLeft{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .navRight{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .brandLogo{
+    width: 50px;
+    height: 50px;
+  }
+
+  .textbrand{
+    width: auto;
+    height: 100%;
+    font-size: 10pt;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: default;
+  }
+
+
+  .textbrand1,.textbrand2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14pt;
+    margin-left: 15px;
+    color: #073795;
+  }  
+
+  .navRight h3{
+    font-size: 12pt;
+    margin-right: 25px ;
+    cursor: pointer;
+  }

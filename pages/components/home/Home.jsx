@@ -10,10 +10,11 @@ function Home() {
             <Image
                 src="/kardus.svg"
                 alt="Picture of the author"
-                width={1000}
-                height={500}
-            >
-            </Image>
+                width={300}
+                height={300}
+                
+            />
+            
             <h1>OUR MISSION</h1>
             <h3>Being the best distributor on providing the best solution for customer by working closely with our suppliers and our customers. We strive to provide an excellent marketing service that is supported by an experienced sales team s</h3>
             </div>

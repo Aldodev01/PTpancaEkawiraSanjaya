@@ -1,11 +1,17 @@
 import React from 'react'
 import styles from '../../../styles/Home.module.css'
 import Image from 'next/image'
+import Navbar from '../Navbar/Navbar'
 
 
 function Home() {
     return (
         <main className={styles.Home}>
+            <Navbar/>
+
+
+
+            {/* VISI N MISI PERUSAHAAN */}
             <div className={styles.visiMisi}>
             <div className={styles.imgContainer}>
             <div className={styles.darkEffect}>

@@ -6,7 +6,7 @@ function Navbar() {
     return (
 
         <nav className={style.navbar}>
-            <div className={style.NavLeft}>
+            <div className={style.navLeft}>
                 <Image
                     src="/Assets/Brand.png"
                     alt="Picture of the author"
@@ -24,7 +24,16 @@ function Navbar() {
                 <h3>PRODUCT</h3>
                 <h3>PROJECT</h3>
                 <h3>CONTACT</h3>
-                <h3>E-COMM LAN</h3>
+                <h3>E-COMM PLAN</h3>
+
+                <div className={style.navSearch}>
+                    <form action="">
+                        <input type="text" className={style.navInput}/>
+                        <span class="material-icons">
+                            search
+                        </span>
+                    </form>
+                </div>
 
             </div>
         </nav>

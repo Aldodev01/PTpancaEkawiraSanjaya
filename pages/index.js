@@ -5,23 +5,37 @@ import HomePage from './components/home/Home'
 import Navbar from './components/Navbar/Navbar'
 
 export default function Home() {
-  return (
+  return (<>
+    <Navbar />
+
     <div className={styles.container}>
       <Head>
         <title>Aldo Apps</title>
         <link rel="icon" href="/iconbrand.svg" />
-      </Head>
-    <Navbar />
+    
 
-      <main className={styles.main}>
+      </Head>
+
+
         
 
         <HomePage/>
-         
-        
-      </main>
-
         <Footer/>
     </div>
+  <style jsx global>{`
+  @import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+  html,
+  body {
+    padding: 0;
+    margin: 0;
+    font-family: Play;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+`}</style>
+    </>
   )
+  
 }

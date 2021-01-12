@@ -7,16 +7,21 @@ function Home() {
     return (
         <main className={styles.Home}>
             <div className={styles.visiMisi}>
+            <div className={styles.imgContainer}>
+            <div className={styles.darkEffect}>
+                <h1>OUR MISSION</h1>
+            <h3>Being the best distributor on providing the best solution for customer by working closely with our suppliers and our customers. We strive to provide an excellent marketing service that is supported by an experienced sales team.</h3>
+            </div>
             <Image
                 src="/kardus.svg"
                 alt="Picture of the author"
-                width={300}
-                height={300}
-                
+                layout="fill"
+                objectFit="cover"                
             />
             
-            <h1>OUR MISSION</h1>
-            <h3>Being the best distributor on providing the best solution for customer by working closely with our suppliers and our customers. We strive to provide an excellent marketing service that is supported by an experienced sales team s</h3>
+            </div>
+            
+            
             </div>
             <div className={styles.businessPartners}>
                 <h1>OUR BUSINESS PARTNERS</h1>

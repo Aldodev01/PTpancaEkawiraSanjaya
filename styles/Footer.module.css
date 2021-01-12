@@ -1,3 +1,4 @@
+
 .footer{
     width: 100vw;
     height: 50vh;
@@ -32,17 +33,15 @@
     width: 100vw;
     height: 10vh;
     display: flex;
-    background-color: 004469;
+    background-color: #004469;
     justify-content: center;
     align-items: center;
     color: white;
-    bottom: auto 0;
-    
 }
 
 .footerTitle{
-    justify-content: center;
     align-items: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 12.5pt;
+    font-weight: normal;
 }
 

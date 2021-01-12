@@ -26,14 +26,13 @@ function Navbar() {
                 <h3>CONTACT</h3>
                 <h3>E-COMM PLAN</h3>
 
-                <div className={style.navSearch}>
-                    <form action="">
-                        <input type="text" className={style.navInput}/>
-                        <span class="material-icons">
-                            search
-                        </span>
+                    <form className={style.navSearch}>
+                        <input type="text" className={style.navInput} placeholder="search..." />
+                        <div className={style.icnContainer}>
+                        <span className="material-icons">search</span>
+                        </div>
+                        
                     </form>
-                </div>
 
             </div>
         </nav>

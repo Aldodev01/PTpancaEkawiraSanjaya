@@ -5,7 +5,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding: 0 5%;
+    padding-left: 5%;
     background-color:rgba(255, 251, 251, 0.9);
     position: fixed;
     top: 0;
@@ -56,11 +56,34 @@
     cursor: pointer;
   }
 
+  .navInput{
+    border: 1px solid #001F8D;
+    width: 70%;
+    height: 100%;
+    border-radius: 30px 0 0 30px;
+    outline: none;
+    background-color: inherit;
+    padding: 0 5%;
+  }
+
   .navSearch{
-    width: 250px;
+    width: auto;
     height: 30px;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+
+  }
+
+  .icnContainer{
+    color: white;
+    background-color: #001F8D;
+    height:100%;
+    width: 40px;
+    border-radius: 0 90px 90px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
   }
   

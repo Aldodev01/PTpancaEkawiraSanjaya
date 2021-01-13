@@ -7,7 +7,7 @@
     justify-content: flex-start;
     padding: 0 5%;
     background-color:rgba(255, 251, 251, 0.9);
-    position: fixed;
+    position: sticky;
     top: 0;
     z-index: 999;
   }

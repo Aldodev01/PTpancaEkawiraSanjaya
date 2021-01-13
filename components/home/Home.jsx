@@ -1,24 +1,21 @@
 import React from 'react'
-import styles from '../../../styles/Home.module.css'
-import Image from 'next/image'
+import './Home.module.css'
 import Navbar from '../Navbar/Navbar'
 
 
 function Home() {
     return (
-        <main className={styles.Home}>
+        <main className="Home">
             <Navbar/>
 
-
-
             {/* VISI N MISI PERUSAHAAN */}
-            <div className={styles.visiMisi}>
-            <div className={styles.imgContainer}>
-            <div className={styles.darkEffect}>
+            <div className="visiMisi">
+            <div className="imgContainer">
+            <div className="darkEffect">
                 <h1>OUR MISSION</h1>
             <h3>Being the best distributor on providing the best solution for customer by working closely with our suppliers and our customers. We strive to provide an excellent marketing service that is supported by an experienced sales team.</h3>
             </div>
-            <Image
+            <img
                 src="/kardus.svg"
                 alt="Picture of the author"
                 layout="fill"
@@ -29,27 +26,27 @@ function Home() {
             
             
             </div>
-            <div className={styles.businessPartners}>
+            <div className="businessPartners">
                 <h1>OUR BUSINESS PARTNERS</h1>
-            <Image
+            <img
                 src="/alderon.svg"
                 alt="Picture of the author"
                 width={300}
                 height={300}
             />
-             <Image
+             <img
                 src="/mortarUtama.svg"
                 alt="Picture of the author"
                 width={200}
                 height={200}
             />
-             <Image
+             <img
                 src="/weber.svg"
                 alt="Picture of the author"
                 width={300}
                 height={300}
             />
-             <Image
+             <img
                 src="/milanEcowood.svg"
                 alt="Picture of the author"
                 width={300}

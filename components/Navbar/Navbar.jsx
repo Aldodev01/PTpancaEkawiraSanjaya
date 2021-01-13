@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import style from "./navbar.module.css"
+import Link from "next/link"
 
 function Navbar() {
     return (
@@ -20,11 +21,11 @@ function Navbar() {
             </div>
 
             <div className={style.navRight}>
-                <h3>COMPANY PROFILE</h3>
-                <h3>PRODUCT</h3>
-                <h3>PROJECT</h3>
-                <h3>CONTACT</h3>
-                <h3>E-COMM PLAN</h3>
+                <h3><Link href="/company">COMPANY PROFILE</Link></h3>
+                <h3><Link href="/product">PRODUCT</Link></h3>
+                <h3> <Link href="/project">PROJECT </Link></h3>
+                <h3><Link href="/contact"> CONTACT </Link></h3>
+                <h3><Link href="/e-comm">E-COMM PLAN</Link></h3>
 
                 <div className={style.navSearch}>
                     <form action="">

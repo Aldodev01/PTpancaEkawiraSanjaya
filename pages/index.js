@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import styles from '../styles/App.module.css'
-import Company from './components/companyProfile/Company'
-import Footer from './components/footer/Footer'
-import HomePage from './components/home/Home'
+import Company from '../components/companyProfile/Company'
+import Footer from '../components/footer/Footer'
+import HomePage from '../components/home/Home'
 
 export default function Home() {
   return (<>

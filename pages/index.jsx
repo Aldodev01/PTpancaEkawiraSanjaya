@@ -1,8 +1,12 @@
 import Head from 'next/head'
 import './Home.module.css'
-import Footer from './components/footer/Footer'
+import Footer from '../components/footer/Footer'
 import Image from 'next/image'
-import Navbar from './components/Navbar/Navbar'
+import Navbar from '../components/Navbar/Navbar'
+import HomeHeader from '../components/HomeHeader/HomeHeader'
+import HomeCard1 from '../components/HomeCard1/HomeCard1'
+import HomeServices from '../components/HomeServices/HomeServices'
+import HomeCard2 from '../components/.HomeCard2/HomeCard2'
 
 
 export default function Home() {
@@ -23,108 +27,14 @@ export default function Home() {
         <Navbar/>
         {/* HERO / HEADER PAGE PERUSAHAAN */}
 
-        <div className="headerImgContainer">
-        <div className="heroText">
-        <h1>YOUR BUILD SOLUTION</h1>
-        <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque corrupti corporis reiciendis, earum optio voluptatibus sint rem autem.</h3>
-        </div>
-        <Image
-            src="/Assets/hero.png"
-            alt="Picture of the author"
-            layout="fill"
-            objectFit="cover"                
-        />
-        </div>
+        <HomeHeader />
 
         <div className="aboutServiceArea">
-        <div className="aboutCard">
-                <div className="cardLeft">
-                    <div className="decorationCard1">{/*Component kosong Jangan Dihapus */}</div>
-            <Image
-                src="/Assets/rumah1.png"
-                alt="Picture of the author"
-                layout="fill"
-                objectFit="cover"
-            />
-                </div>
-                <div className="cardRight">
-                    <h1>Lorem Ipsum Dolor</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque corrupti corporis reiciendis, earum optio voluptatibus sint rem autem. Ab dolorem sapiente distinctio quod, a maiores nobis iure soluta accusamus suscipit.</p>
-                </div>
-                <div className="cardBottom">
-                        <div className="buletCardUtama"></div>
-                        <div className="buletCard"></div>
-                        <div className="buletCard"></div>
-                        <div className="buletCard"></div>
-                        <div className="buletCard"></div>
-                        <div className="blueDecoration"></div>
+        
+        <HomeCard1 />
+        <HomeServices />
+        <HomeCard2 />
 
-
-                </div>
-            </div>
-
-            <div className="ourServices">
-                <h2>OUR SERVICE</h2>
-                <div className="decorationServices"></div>
-                <div className="serviceContent">
-                    <i className="fas fa-building"></i>
-                   <div className="serviceText">
-                   <h2>Building</h2>
-                   <p>Lorem  ipsum, dolor sit amet consectetur adipisicing elit.  </p>
-                   </div>
-                </div>
-                <div className="serviceContent">
-                    <i className="fas fa-shopping-cart"></i>
-                   <div className="serviceText">
-                   <h2>SUPPLYING</h2>
-                   <p>Lorem  ipsum, dolor sit amet consectetur adipisicing elit.  </p>
-                   </div>
-                </div>
-                <div className="serviceContent">
-                   <i className="fas fa-tools"></i>
-                   <div className="serviceText">
-                   <h2>DISTRIBUTING</h2>
-                   <p>Lorem  ipsum, dolor sit amet consectetur adipisicing elit.  </p>
-                   </div>
-                </div>
-                <div className="serviceContent">
-                    <i className="fas fa-tools"></i>
-                   <div className="serviceText">
-                   <h2>CONSTRUCTION SERVICE</h2>
-                   <p>Lorem  ipsum, dolor sit amet consectetur adipisicing elit.  </p>
-                   </div>
-                </div>
-                <div className="decorationBolaService"></div>
-                <div className="decorationBolaService2"></div>
-                <div className="decorationBolaService3"></div>
-            </div>
-
-
-            <div className="aboutCard2">
-                <div className="cardLeft2">
-                    <h1>Lorem Ipsum Dolor</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque corrupti corporis reiciendis, earum optio voluptatibus sint rem autem. Ab dolorem sapiente distinctio quod, a maiores nobis iure soluta accusamus suscipit.</p>
-                </div>
-                <div className="cardRight2">
-                    <div className="decorationCard2">{/*Component kosong Jangan Dihapus */}</div>
-            <Image
-                src="/Assets/rumah2.png"
-                alt="Picture of the author"
-                layout="fill"
-                objectFit="cover"
-            />
-                </div>
-                <div className="cardBottom">
-                        <div className="blueDecoration2"></div>
-                        <div className="buletCardUtama"></div>
-                        <div className="buletCard"></div>
-                        <div className="buletCard"></div>
-                        <div className="buletCard"></div>
-                        <div className="buletCard"></div>
-
-
-                </div>
-            </div>
             
         </div>
 

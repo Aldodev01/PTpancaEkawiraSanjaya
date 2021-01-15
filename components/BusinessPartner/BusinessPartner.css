@@ -31,6 +31,11 @@
 .forMarginBottomHome{
     margin-bottom: 50px;
 }
+.mortar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 @media only screen and (max-width:500px){
     .businessPartners h1{
@@ -60,5 +65,20 @@
     .gambarBawah img{
         width: 250px;
         height: 250px;
+    }
+}
+
+@media only screen and (min-width : 501px) and (max-width : 937px) {
+    .gambarBawah img{
+        width: 250px;
+        height: 250px;
+    }
+
+    .mortar {
+        margin-right: 30px;
+    }
+    .gambarBawah{
+        margin: 0 auto;
+
     }
 }

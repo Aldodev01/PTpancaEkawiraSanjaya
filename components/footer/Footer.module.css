@@ -109,3 +109,67 @@
     font-size: 28pt;
     margin-bottom: 9px;
 }
+
+@media only screen and (max-width : 500px){
+    .footer{
+        flex-direction: column;
+        height: auto;
+    }
+    .footerKiri{
+        height: auto;
+        width: 100%;
+    }
+    .footerKanan{
+        height: auto;
+        width: auto;
+    }
+    .footerTitle{
+        font-size: 10pt;
+    }
+    .footerProduct h4, .footerProject h4, .footerServices h4{
+        font-size: 10pt;
+        font-weight: normal;
+        padding: 2px 0;
+    }
+
+.footerProduct,.footerProject{
+    width: 50%;
+}
+.footerProject{
+    margin-left: auto;
+
+}
+
+    .footerKanan{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .footerProduct h3 , .footerProject h3, .footerServices h3 {
+        font-size: 11pt;
+        margin-bottom: 5px;
+    }
+    
+    .PTpancaFooterText{
+        font-size: 12pt;
+    }
+
+    .textFooter{
+        font-size: 11pt;
+        width: 100%;
+    }
+
+    .contactMeContainer .fas, .contactMeContainer .far {
+        font-size: 18pt;
+        margin-bottom: 15px;
+    } 
+    
+    .contactMeContainer .fab{
+        font-size: 23pt;
+        margin-bottom: 9px;
+    }
+
+    .contactMeContainer h3{
+        font-size: 10pt;
+    }
+}

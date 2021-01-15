@@ -105,7 +105,7 @@
     }
     .cardLeft2{
         width: 100%;
-        height: 40vh;
+        height: 35vh;
         justify-content: flex-start;
     }
     .cardRight2{
@@ -135,7 +135,7 @@
     .cardBottomPhone2{
         display: flex;
         width: 100%;
-        height: 30px;
+        height: 60px;
         border-radius: 0 0 15px 15px;
         display: flex;
         align-items: center;

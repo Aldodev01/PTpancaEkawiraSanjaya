@@ -31,3 +31,34 @@
 .forMarginBottomHome{
     margin-bottom: 50px;
 }
+
+@media only screen and (max-width:500px){
+    .businessPartners h1{
+        font-size: 18pt;
+        padding: 0 5%;
+    }
+
+    .imgContainerBottom{
+        justify-content: center;
+        
+    }
+
+    .gambarBawah{
+        position: relative;
+    }
+
+    .mortar{
+        position: relative;
+    }
+
+    .mortar img{
+        width: 150px;
+        height: 150px;
+    }
+
+
+    .gambarBawah img{
+        width: 250px;
+        height: 250px;
+    }
+}

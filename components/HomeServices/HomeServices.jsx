@@ -13,14 +13,14 @@ const HomeServices= () =>{
                    </div>
                 </div>
                 <div className="serviceContent">
-                    <i className="fas fa-shopping-cart"></i>
+                    <i className="fas fa-shopping-cart belanja"></i>
                    <div className="serviceText">
                    <h2>SUPPLYING</h2>
                    <p>Lorem  ipsum, dolor sit amet consectetur adipisicing elit.  </p>
                    </div>
                 </div>
                 <div className="serviceContent">
-                   <i className="fas fa-tools"></i>
+                   <i className="fas fa-box"></i>
                    <div className="serviceText">
                    <h2>DISTRIBUTING</h2>
                    <p>Lorem  ipsum, dolor sit amet consectetur adipisicing elit.  </p>

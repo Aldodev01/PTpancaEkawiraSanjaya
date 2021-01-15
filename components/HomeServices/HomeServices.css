@@ -70,3 +70,34 @@
     border-radius: 90px;
     background-color: #001F8D;
 }
+
+@media only screen and (max-width:500px){
+
+    .ourServices h2{
+        font-size: 14pt;
+    }
+    .decorationServices{
+        width: 70px;
+        height: 7px;
+        margin-top: 5px;
+        margin-bottom: 0;
+
+    }
+
+    .decorationBolaService,.decorationBolaService2,.decorationBolaService3{
+        display: none;
+    }
+
+    .serviceContent .fas{
+        font-size: 28pt;
+    }
+
+    .belanja{
+        margin-left: -5px;
+    }
+
+    .serviceText h2{
+        font-size: 13pt;
+    }
+
+}

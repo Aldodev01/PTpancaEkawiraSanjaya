@@ -23,15 +23,15 @@ function Footer() {
                             <h3>TELEPON</h3>
                         </div>
                         <div className="contactMeContainer">
-                            <i class="far fa-envelope"></i>
+                            <i className="far fa-envelope"></i>
                             <h3>CONTACT US</h3>
                         </div>
                         <div className="contactMeContainer">
-                            <i class="fab fa-whatsapp"></i>
+                            <i className="fab fa-whatsapp"></i>
                             <h3>WHATSAPP</h3>
                         </div>
                         <div className="contactMeContainer">
-                            <i class="fas fa-map-marker-alt"></i>
+                            <i className="fas fa-map-marker-alt"></i>
                             <h3>LOCATION</h3>
                         </div>
                     </div>

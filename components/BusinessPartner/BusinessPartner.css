@@ -1,0 +1,33 @@
+.businessPartners{
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    box-shadow: inset 1.5vw 0 0 #D12635;
+}
+
+.businessPartners h1 {
+    text-align: center;
+    margin-top: 50px;
+
+}
+
+.imgContainerBusiness{
+    width: 100vw;
+    height: auto;
+    display: flex;
+}
+
+.imgContainerBottom{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 10%;
+}
+
+.forMarginBottomHome{
+    margin-bottom: 50px;
+}

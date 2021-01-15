@@ -7,8 +7,10 @@ function Navbar() {
 
         <nav className="navbar">
             <div className="navLeft">
-            <i class="fas fa-bars menuNav"></i>
-                <div className="imgGroups">
+            <i className="fas fa-bars menuNav"></i>
+                <div className="imgGroups" onClick={()=>{
+                    window.location.href = "/"
+                }}>
                 <Image
                     src="/Assets/Brand.png"
                     alt="Picture of the author"
@@ -20,7 +22,7 @@ function Navbar() {
                         <h3 className="textbrand2">SANJAYA</h3>
                     </div> 
                 </div>
-                <i class="fas fa-search searchIconPhone"></i>
+                <i className="fas fa-search searchIconPhone"></i>
 
             </div>
 
@@ -29,8 +31,8 @@ function Navbar() {
                 <h3>PRODUCT</h3>
                 <h3>PROJECT</h3>
                 <h3>CONTACT</h3>
-                <h3>E-COMM PLAN</h3>
-                <i class="fas fa-search searchIconNoteBook"></i>
+                <a href="/ecommplan"><h3>E-COMM PLAN</h3></a>
+                <i className="fas fa-search searchIconNoteBook"></i>
 
                     <form className="navSearch">
                         <input type="text" className="navInput" placeholder="search..." />

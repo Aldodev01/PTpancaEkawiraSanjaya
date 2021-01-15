@@ -1,0 +1,143 @@
+.contact{
+  width: 100vw;
+  height: auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imgContact{
+  width: 100vw;
+  height: 60vh;
+  position: relative;
+} 
+
+.imgContact img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-position: center;
+}
+
+.judulContact{
+  width: 100%;
+  height: 100%;
+  z-index: 400;
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.308);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10%;
+}
+
+
+.form-container{
+  width: 100vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  padding: 5%;
+  gap: 30px;
+}
+
+.gmaps{
+  width: 50vw;
+  height: auto;
+  border-radius: 10px;
+}
+
+.gmaps iframe{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  
+}
+
+.form-contact{
+  position: relative;
+  width: 50vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 3%;
+  background-color: #ffffff;
+  border: 2px solid #4285F4;
+  border-radius: 10px;
+}
+
+.decorationCard1{
+  position: absolute;
+  margin: -6.5%;
+  width: 10%;
+  height: 101%;
+  box-shadow: inset 1.5vw 0 0 #4285F4;
+  z-index: 20;
+  border-radius: 15px 15px 15px 15px;
+}
+
+.form-isi{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 10px;
+}
+
+.form-isi input{
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 102, 255, 0.8);
+  padding: 2%;
+  border-radius: 10px;
+}
+
+.form-isi textarea{
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 102, 255, 0.8);
+  padding: 2%;
+  border-radius: 10px;
+}
+
+.btn-submit{
+  width: 100%;
+  height: 50px;
+  background: #4285F4;
+  border-radius: 90px;
+  color: white;
+  border: none;
+  margin-top: 10px;
+}
+
+@media only screen and (max-width:768px){
+  .form-container{
+    width: 100vw;
+    flex-direction: column;
+  }
+
+  .gmaps{
+    width: 100%;
+    height: 50vh;
+  }
+
+  .form-contact{
+    width: 100%;
+    padding: 8%;
+  }
+
+  .decorationCard1{
+    display: flex;
+    margin: -9%;
+    box-shadow: inset 3vw 0 0 #4285F4;
+
+  }
+  .form-isi{
+    margin-left: 5px;
+  }
+  .form-isi input{
+    border-radius: 8px;
+  }
+}

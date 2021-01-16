@@ -1,12 +1,40 @@
 import React from 'react'
+import Image from 'next/image'
 import "./navbar.module.css"
+import { useState } from 'react'
 
 function Navbar() {
+    const [showModal,setShowModal] = useState(false)
     return (
+        <>
+    {showModal &&(
+            <div className="modalNav">
+                <h3>COMPANY PROFILE</h3>
+                <h3>PRODUCT</h3>
+                <h3 onClick={()=>{
+                    window.location.href = "/project"
+                }}>PROJECT</h3>
+                <h3 onClick={()=>{
+                    window.location.href = "/contact"
+                }}>CONTACT</h3>
+                <h3 onClick={()=>{
+                    window.location.href = "/ecommplan"
+                }}>E-COMM PLAN</h3>
+            </div>
+    )}
 
-        <nav className="navbar">
+
+        <nav className="navbar" style={{
+            opacity : showModal ? 1 : 0.9
+        }}>
             <div className="navLeft">
-                <img
+            <i className="fas fa-bars menuNav" onClick={()=>{
+        setShowModal(!showModal)
+    }}      ></i>
+                <div className="imgGroups" onClick={()=>{
+                    window.location.href = "/"
+                }}>
+                <Image
                     src="/Assets/Brand.png"
                     alt="Picture of the author"
                     width="65"
@@ -15,27 +43,32 @@ function Navbar() {
                     <div className="textbrand">
                         <h3 className="textbrand1">PANCA EKAWIRA</h3>
                         <h3 className="textbrand2">SANJAYA</h3>
-                    </div>   
+                    </div> 
+                </div>
+                <i className="fas fa-search searchIconPhone"></i>
+
             </div>
 
             <div className="navRight">
                 <h3>COMPANY PROFILE</h3>
                 <h3>PRODUCT</h3>
-                <h3>PROJECT</h3>
-                <h3>CONTACT</h3>
-                <h3>E-COMM PLAN</h3>
+                <a href="/project"><h3>PROJECT</h3></a>
+                <a href="/contact"><h3>CONTACT</h3></a>
+                <a href="/ecommplan"><h3>E-COMM PLAN</h3></a>
+                <i className="fas fa-search searchIconNoteBook"></i>
 
-                <div className="navSearch">
-                    <form action="">
-                        <input type="text" className="navInput"/>
-                        <span className="material-icons">
-                            search
-                        </span>
+                    <form className="navSearch">
+                        <input type="text" className="navInput" placeholder="search..." />
+                        <div className="icnContainer">
+                        <span className="material-icons">search</span>
+                        </div>
+                        
                     </form>
-                </div>
 
             </div>
         </nav>
+
+        </>
 
     )
 }

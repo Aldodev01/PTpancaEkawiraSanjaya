@@ -112,11 +112,12 @@
 }
 
 .cardRight p{
-  text-align: justify;
 }
 
 .cardRight h1{
   font-size: 1.5rem;
+  text-align: center;
+
 }
 
 
@@ -125,9 +126,16 @@
     width: 80vw;
     height: auto;
     padding-bottom: 5%;
+    flex-direction: column;
   }
 
   .cardRight h1{
     font-size: 1.5rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
+
+
 }

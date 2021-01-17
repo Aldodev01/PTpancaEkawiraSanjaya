@@ -1,7 +1,7 @@
 .headerImgContainer{
     width: 100vw;
     position: relative;
-    height: 80vh;
+    height: 500px;
     margin-top: 13vh;
 }
 
@@ -46,6 +46,8 @@
 }
 
 @media only screen and (min-width:501px) and (max-width: 800px){
+
+    
     .heroText{
         padding:  0 5%;
 
@@ -56,5 +58,17 @@
 
     .heroText h3{
         font-size: 14pt;
+    }
+}
+
+@media only screen and (min-height : 1100px) and (max-height:1400px) {
+    .headerImgContainer{
+        height: 1000px;
+    }
+}
+
+@media only screen and (min-height : 1000px) and (max-height:1099px) {
+    .headerImgContainer{
+        height: 900px;
     }
 }

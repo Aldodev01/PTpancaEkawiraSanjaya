@@ -2,23 +2,13 @@ import React from 'react'
 import Image from 'next/image'
 import "./navbar.module.css"
 import { useState } from 'react'
+import TabMenu from '../tabMenu/TabMenu'
 
 function Navbar() {
     const [showModal,setShowModal] = useState(false)
     return (
         <>
-    {showModal &&(
-            <div className="modalNav">
-                <h3>COMPANY PROFILE</h3>
-                <h3>PRODUCT</h3>
-                <h3>PROJECT</h3>
-                <h3>CONTACT</h3>
-                <h3 onClick={()=>{
-                    window.location.href = "/ecommplan"
-                }}>E-COMM PLAN</h3>
-            </div>
-    )}
-
+    <TabMenu show={showModal}/>
 
         <nav className="navbar" style={{
             opacity : showModal ? 1 : 0.9

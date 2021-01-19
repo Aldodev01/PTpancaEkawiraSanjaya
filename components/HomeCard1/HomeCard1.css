@@ -38,15 +38,21 @@
     width: 45%;
     height: 85%;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     flex-direction: column;
     padding: 0 3%;
-    gap: 10%;
+    position: relative;
 }
 
 .cardRight p{
     text-align: justify;
+    padding: 5px 0;
+}
+
+.cardRight h1{
+    font-size: 18pt;
+    margin-bottom: 30px;
 }
 
 .cardBottom{
@@ -71,6 +77,7 @@
     height: 10px;
     border-radius: 90px;
     background-color: #D12635;
+    cursor: pointer;
 }
 
 .blueDecoration{
@@ -83,7 +90,37 @@
     margin-right: -42%;
 }
 
+.arrowLeft{
+    position: absolute;
+    color:  #D12635;
+    text-shadow: .1px .5px 1px white;
+    font-size: 48pt;
+    left: 3%;
+    top: 40%;
+    z-index: 99;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.arrowRight{
+    position: absolute;
+    color:  #D12635;
+    font-size: 48pt;
+    right: 3%;
+    top: 40%;
+    z-index: 99;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.arrowLeft:hover,.arrowRight:hover{
+    opacity: 1;
+}
+
 @media only screen and (max-width: 500px){
+    .arrowRight,.arrowLeft{
+        display: none;
+    }
     .aboutCard{
         margin-left: 5%;
         width: 90vw;
@@ -135,9 +172,14 @@
         border-radius: 90px;
         background-color: #D12635;
     }
+
+
 }
 
 @media only screen and (min-width : 501px) and (max-width: 800px){
+    .arrowRight,.arrowLeft{
+        display: none;
+    }
     .aboutCard{
         height: 650px;
         flex-direction: column;

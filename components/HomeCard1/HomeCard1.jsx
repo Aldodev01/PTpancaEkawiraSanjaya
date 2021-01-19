@@ -1,33 +1,236 @@
 import './HomeCard1.css'
 import Image from 'next/image'
+import { useState } from 'react'
 
 const HomeCard1 = () =>{
+
+    const [carousel,setCarousel] = useState({
+        carousel1 : true,
+        carousel2 : false,
+        carousel3 : false,
+        carousel4 : false
+    })
+
+    if(carousel.carousel1 === true){
+        setCarousel.carousel2 = false
+        setCarousel.carousel3 = false
+        setCarousel.carousel4 = false
+    }
+
     return(
         <div className="aboutCard">
+            {carousel.carousel1 && (
+                <>
                 <div className="cardLeft">
+                <span class="material-icons arrowLeft" onClick={()=>{
+                    setCarousel({
+                        carousel4 : true
+                    })
+                }}>
+                 keyboard_arrow_left
+                </span>
                     <div className="decorationCard1">{/*Component kosong Jangan Dihapus */}</div>
             <Image
-                src="/Assets/rumah1.png"
+                src="/Assets/project1.JPG"
                 alt="Picture of the author"
                 layout="fill"
                 objectFit="cover"
             />
                 </div>
                 <div className="cardRight">
-                    <h1>Lorem Ipsum Dolor</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque corrupti corporis reiciendis, earum optio voluptatibus sint rem autem. Ab dolorem sapiente distinctio quod, a maiores nobis iure soluta accusamus suscipit.</p>
+                    <span class="material-icons arrowRight" onClick={()=>{
+                        setCarousel({
+                            carousel2 : true
+                        })
+                    }}>
+                    keyboard_arrow_right
+                    </span>
+                    <h1>Cluster Caelus, Greenwich – BSD (128 units)</h1>
+                    <p>Pengerjaan : Kisi – Kisi Almunium</p>
+                    <p>Material : Almunium</p>
                 </div>
                 <div className="cardBottom">
                         <div className="buletCardUtama"></div>
-                        <div className="buletCard"></div>
-                        <div className="buletCard"></div>
-                        <div className="buletCard"></div>
-                        <div className="buletCard"></div>
+                        <div className="buletCard" onClick={()=>{
+                            setCarousel({
+                                carousel2 : true
+                            })
+                        }}></div>
+                        <div className="buletCard" onClick={()=>{
+                            setCarousel({
+                                carousel3 : true
+                            })
+                        }}></div>
+                        <div className="buletCard" onClick={()=>{
+                            setCarousel({
+                                carousel4 : true
+                            })
+                        }}></div>
                         <div className="blueDecoration"></div>
 
 
                 </div>
-            </div>
+                </>
+            )}
+
+                {carousel.carousel2 && (
+                <>
+                <div className="cardLeft">
+                <span class="material-icons arrowLeft" onClick={()=>{setCarousel({
+                    carousel1 : true
+                })}} >
+                 keyboard_arrow_left
+                </span>
+                    <div className="decorationCard1">{/*Component kosong Jangan Dihapus */}</div>
+            <Image
+                src="/Assets/project2.JPG"
+                alt="Picture of the author"
+                layout="fill"
+                objectFit="cover"
+            />
+                </div>
+                <div className="cardRight">
+                    <span class="material-icons arrowRight" onClick={()=>{
+                        setCarousel({
+                            carousel3 : true
+                        })
+                    }}>
+                    keyboard_arrow_right
+                    </span>
+                    <h1>Cluster Water Terrace, Grand Wisata (24 units)</h1>
+                    <p>Pengerjaan : Kisi – Kisi Almunium</p>
+                    <p>Material : Almunium Handal</p>
+                </div>
+                <div className="cardBottom">
+                        <div className="buletCard" onClick={()=>{
+                            setCarousel({
+                                carousel1 : true
+                            })
+                        }}></div>
+                        <div className="buletCardUtama"></div>
+                        <div className="buletCard" onClick={()=>{
+                            setCarousel({
+                                carousel3 : true
+                            })
+                        }}></div>
+                        <div className="buletCard" onClick={()=>{
+                            setCarousel({
+                                carousel4 : true
+                            })
+                        }}></div>
+                        <div className="blueDecoration"></div>
+
+
+                </div>
+                </>
+            )}
+
+            {carousel.carousel3 && (
+                <>
+                <div className="cardLeft">
+                <span class="material-icons arrowLeft" onClick={()=>{setCarousel({
+                    carousel2 : true
+                })}} >
+                 keyboard_arrow_left
+                </span>
+                    <div className="decorationCard1">{/*Component kosong Jangan Dihapus */}</div>
+            <Image
+                src="/Assets/project3.jpg"
+                alt="Picture of the author"
+                layout="fill"
+                objectFit="cover"
+            />
+                </div>
+                <div className="cardRight">
+                    <span class="material-icons arrowRight" onClick={()=>{
+                        setCarousel({
+                            carousel4 : true
+                        })
+                    }}>
+                    keyboard_arrow_right
+                    </span>
+                    <h1>The Branz Simatupang</h1>
+                    <p>Pengerjaan : Decking outdoor & indoor </p>
+                    <p>Product : Milan Ecowood</p>
+                </div>
+                <div className="cardBottom">
+                        <div className="buletCard" onClick={()=>{
+                            setCarousel({
+                                carousel1 : true
+                            })
+                        }}></div>
+                        <div className="buletCard" onClick={()=>{
+                            setCarousel({
+                                carousel2 : true
+                            })
+                        }}></div>
+                        <div className="buletCardUtama"></div>
+                        <div className="buletCard" onClick={()=>{
+                            setCarousel({
+                                carousel4 : true
+                            })
+                        }}></div>
+                        <div className="blueDecoration"></div>
+
+
+                </div>
+                </>
+            )}
+
+            {carousel.carousel4 && (
+                <>
+                <div className="cardLeft">
+                <span class="material-icons arrowLeft" onClick={()=>{setCarousel({
+                    carousel3 : true
+                })}} >
+                 keyboard_arrow_left
+                </span>
+                    <div className="decorationCard1">{/*Component kosong Jangan Dihapus */}</div>
+            <Image
+                src="/Assets/project4.jpg"
+                alt="Picture of the author"
+                layout="fill"
+                objectFit="cover"
+            />
+                </div>
+                <div className="cardRight">
+                    <span class="material-icons arrowRight" onClick={()=>{
+                        setCarousel({
+                            carousel1 : true
+                        })
+                    }}>
+                    keyboard_arrow_right
+                    </span>
+                    <h1>Pabrik Difi Medika</h1>
+                    <p>Pengerjaan : Atap </p>
+                    <p>Product : Alderon</p>
+                </div>
+                <div className="cardBottom">
+                        <div className="buletCard" onClick={()=>{
+                            setCarousel({
+                                carousel1 : true
+                            })
+                        }}></div>
+                        <div className="buletCard" onClick={()=>{
+                            setCarousel({
+                                carousel2 : true
+                            })
+                        }}></div>
+                        <div className="buletCard" onClick={()=>{
+                            setCarousel({
+                                carousel3 : true
+                            })
+                        }}></div>
+                        <div className="buletCardUtama"></div>
+                        <div className="blueDecoration"></div>
+
+
+                </div>
+                </>
+            )}
+
+
+        </div>
     )
 }
 

@@ -1,6 +1,7 @@
 import './HomeCard1.css'
 import Image from 'next/image'
 import { useState } from 'react'
+import { useEffect } from 'react/cjs/react.development'
 
 const HomeCard1 = () =>{
 
@@ -11,11 +12,56 @@ const HomeCard1 = () =>{
         carousel4 : false
     })
 
-    if(carousel.carousel1 === true){
-        setCarousel.carousel2 = false
-        setCarousel.carousel3 = false
-        setCarousel.carousel4 = false
-    }
+    useEffect(()=>{
+        setTimeout(()=>{
+            setCarousel({
+                carousel2 : true
+            })
+        }, 10000)
+
+        setTimeout(()=>{
+            setCarousel({
+                carousel3 : true
+            })
+        }, 20000)
+
+        setTimeout(()=>{
+            setCarousel({
+                carousel4 : true
+            })
+        }, 30000)
+
+        setTimeout(()=>{
+            setCarousel({
+                carousel1 : true
+            })
+        }, 40000)
+
+        setTimeout(()=>{
+            setCarousel({
+                carousel2 : true
+            })
+        }, 50000)
+
+        setTimeout(()=>{
+            setCarousel({
+                carousel3 : true
+            })
+        }, 60000)
+
+        setTimeout(()=>{
+            setCarousel({
+                carousel4 : true
+            })
+        }, 70000)
+
+        setTimeout(()=>{
+            setCarousel({
+                carousel1 : true
+            })
+        }, 80000)
+
+    },[])
 
     return(
         <div className="aboutCard">

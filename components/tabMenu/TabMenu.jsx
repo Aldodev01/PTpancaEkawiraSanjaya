@@ -1,4 +1,4 @@
-import './tabMenu.css'
+import './TabMenu.css'
 
 const TabMenu = ({show}) =>{
     return(

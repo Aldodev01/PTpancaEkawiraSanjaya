@@ -7,7 +7,7 @@ import HomeHeader from '../components/HomeHeader/HomeHeader'
 import HomeCard1 from '../components/HomeCard1/HomeCard1'
 import HomeServices from '../components/HomeServices/HomeServices'
 import HomeCard2 from '../components/HomeCard2/HomeCard2'
-import VisiMisi from '../components/VisiMisi/visiMisi'
+import VisiMisi from '../components/VisiMisi/VisiMisi'
 import BusinessPartner from '../components/BusinessPartner/BusinessPartner'
 
 

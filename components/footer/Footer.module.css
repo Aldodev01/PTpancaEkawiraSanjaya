@@ -1,175 +1,45 @@
-
-.footer{
-    width: 100vw;
-    height: 50vh;
-    display: flex;
-    color: white;
-    gap: 20px;
-    padding: 10px;
+.footer {
+  width: 100vw;
+  height: 50vh;
+  background-image: url(/public/backgroundFooter.svg);
+  background-color: #007cba4d;
+  display: flex;
+  color: white;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
 }
 
-.footerKiri{
-    width: 45%;
-    height: 100%;
-    display: flex;
-    padding: 3% 4%;
-    flex-direction: column;
-}
-.footerKanan{
-    width: 55%;
-    height: 100%;
-    display: flex;
-    padding:  3% 5%;
-    flex-wrap: wrap;
+.footerKiri {
+  width: 44%;
+  height: 100%;
+  display: flex;
+  padding: 2.5% 4%;
+  flex-direction: column;
 }
 
-.footerProduct,.footerProject,.footerServices{
-    width: auto;
-    height: auto;
-    display: flex;
-    flex-direction: column;
+.PTpancaFooterText {
+  border-bottom: 3px solid whitesmoke;
+  padding: 10px;
 }
 
-.footerServices{
-    margin-top: -5vh;
+.textFooter {
+  width: 380px;
+  padding: 10px;
 }
 
-.footerProject{
-    margin-left: 30%;
+.footerBawah {
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  background-color: #004469;
+  justify-content: center;
+  align-items: center;
+  color: white;
 }
 
-.footerProduct h3 , .footerProject h3, .footerServices h3 {
-    font-size: 13pt;
-    margin-bottom: 5px;
-}
-
-.footerProduct h4, .footerProject h4, .footerServices h4{
-    font-size: 12pt;
-    font-weight: normal;
-    padding: 2px 0;
-}
-
-.PTpancaFooterText{
-    border-bottom: 3px solid whitesmoke;
-    padding-bottom: 20px;
-    font-size: 16pt;
-    margin-bottom: 10px;
-}
-
-.textFooter{
-    font-weight: normal;
-    width: 80%;
-    font-size: 12pt;
-
-}
-
-.footerBawah{
-    width: 100vw;
-    height: 10vh;
-    display: flex;
-    background-color: #004469;
-    justify-content: center;
-    align-items: center;
-    color: white;
-}
-
-.footerTitle{
-    align-items: center;
-    font-size: 12.5pt;
-    font-weight: normal;
-}
-
-.kontakPT{
-    width: 100%;
-    height: auto;
-    display: flex;
-    margin-top: 25px;
-    justify-content: space-between;
-}
-
-.contactMeContainer{
-    width: auto;
-    height: auto;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-.contactMeContainer h3{
-    font-weight: normal;
-    font-size: 11pt;
-}
-
-.contactMeContainer .fas, .contactMeContainer .far {
-    font-size: 24pt;
-    margin-bottom: 15px;
-} 
-
-.contactMeContainer .fab{
-    font-size: 28pt;
-    margin-bottom: 9px;
-}
-
-@media only screen and (max-width : 500px){
-    .footer{
-        flex-direction: column;
-        height: auto;
-    }
-    .footerKiri{
-        height: auto;
-        width: 100%;
-    }
-    .footerKanan{
-        height: auto;
-        width: auto;
-    }
-    .footerTitle{
-        font-size: 10pt;
-    }
-    .footerProduct h4, .footerProject h4, .footerServices h4{
-        font-size: 10pt;
-        font-weight: normal;
-        padding: 2px 0;
-    }
-
-.footerProduct,.footerProject{
-    width: 50%;
-}
-.footerProject{
-    margin-left: auto;
-
-}
-
-    .footerKanan{
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .footerProduct h3 , .footerProject h3, .footerServices h3 {
-        font-size: 11pt;
-        margin-bottom: 5px;
-    }
-    
-    .PTpancaFooterText{
-        font-size: 12pt;
-    }
-
-    .textFooter{
-        font-size: 11pt;
-        width: 100%;
-    }
-
-    .contactMeContainer .fas, .contactMeContainer .far {
-        font-size: 18pt;
-        margin-bottom: 15px;
-    } 
-    
-    .contactMeContainer .fab{
-        font-size: 23pt;
-        margin-bottom: 9px;
-    }
-
-    .contactMeContainer h3{
-        font-size: 10pt;
-    }
+.footerTitle {
+  align-items: center;
+  font-size: 12.5pt;
+  font-weight: normal;
 }

@@ -1,74 +1,43 @@
 import React from 'react'
 import Image from 'next/image'
-import "./navbar.module.css"
-import { useState } from 'react'
+import style from "./navbar.module.css"
+import Link from "next/link"
 
 function Navbar() {
-    const [showModal,setShowModal] = useState(false)
     return (
-        <>
-    {showModal &&(
-            <div className="modalNav">
-                <h3>COMPANY PROFILE</h3>
-                <h3>PRODUCT</h3>
-                <h3 onClick={()=>{
-                    window.location.href = "/project"
-                }}>PROJECT</h3>
-                <h3 onClick={()=>{
-                    window.location.href = "/contact"
-                }}>CONTACT</h3>
-                <h3 onClick={()=>{
-                    window.location.href = "/ecommplan"
-                }}>E-COMM PLAN</h3>
-            </div>
-    )}
 
-
-        <nav className="navbar" style={{
-            opacity : showModal ? 1 : 0.9
-        }}>
-            <div className="navLeft">
-            <i className="fas fa-bars menuNav" onClick={()=>{
-        setShowModal(!showModal)
-    }}      ></i>
-                <div className="imgGroups" onClick={()=>{
-                    window.location.href = "/"
-                }}>
+        <nav className={style.navbar}>
+            <div className={style.navLeft}>
                 <Image
                     src="/Assets/Brand.png"
                     alt="Picture of the author"
                     width="65"
                     height="65"
                     />
-                    <div className="textbrand">
-                        <h3 className="textbrand1">PANCA EKAWIRA</h3>
-                        <h3 className="textbrand2">SANJAYA</h3>
-                    </div> 
-                </div>
-                <i className="fas fa-search searchIconPhone"></i>
-
+                    <div className={style.textbrand}>
+                        <h3 className={style.textbrand1}>PANCA EKAWIRA</h3>
+                        <h3 className={style.textbrand2}>SANJAYA</h3>
+                    </div>   
             </div>
 
-            <div className="navRight">
-                <h3>COMPANY PROFILE</h3>
-                <h3>PRODUCT</h3>
-                <a href="/project"><h3>PROJECT</h3></a>
-                <a href="/contact"><h3>CONTACT</h3></a>
-                <a href="/ecommplan"><h3>E-COMM PLAN</h3></a>
-                <i className="fas fa-search searchIconNoteBook"></i>
+            <div className={style.navRight}>
+                <h3><Link href="/company">COMPANY PROFILE</Link></h3>
+                <h3><Link href="/product">PRODUCT</Link></h3>
+                <h3> <Link href="/project">PROJECT </Link></h3>
+                <h3><Link href="/contact"> CONTACT </Link></h3>
+                <h3><Link href="/e-comm">E-COMM PLAN</Link></h3>
 
-                    <form className="navSearch">
-                        <input type="text" className="navInput" placeholder="search..." />
-                        <div className="icnContainer">
-                        <span className="material-icons">search</span>
-                        </div>
-                        
+                <div className={style.navSearch}>
+                    <form action="">
+                        <input type="text" className={style.navInput}/>
+                        <span class="material-icons">
+                            search
+                        </span>
                     </form>
+                </div>
 
             </div>
         </nav>
-
-        </>
 
     )
 }

@@ -25,7 +25,7 @@ export default function Home() {
       </Head>
 
       <main className="Home">
-        <Navbar/>
+        
         {/* HERO / HEADER PAGE PERUSAHAAN */}
 
         <HomeHeader />
@@ -46,7 +46,7 @@ export default function Home() {
         {/* Business Partner */}
         <BusinessPartner />
     </main>
-        <Footer/>
+      
 
   <style jsx global>{`
   @import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');

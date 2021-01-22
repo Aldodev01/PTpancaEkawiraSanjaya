@@ -8,7 +8,6 @@ function Footer() {
     return (
     <>
         <div className="footer">
-            <div className="bluebg">
                 <div className="footerKiri">
                     <h3 className="PTpancaFooterText">PT. PANCA EKAWIRA SANJAYA</h3>
                     <h4 className="textFooter">The CEO Building 12th floor  Jl. TB. Simatupang 
@@ -59,7 +58,6 @@ function Footer() {
                     </div>
 
                 </div>
-                </div>
            
             
         
@@ -74,8 +72,8 @@ function Footer() {
             {
                 `
                     .footer{
-                        background-image: url('./Assets/footerbg.jpg');
-                        background-position:center;
+                        background-image: url('./backgroundFooter.svg');
+                        background-position:bottom;
                     }
                 `
             }

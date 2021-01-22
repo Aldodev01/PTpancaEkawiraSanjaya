@@ -1,6 +1,9 @@
 import './ContactForm.css'
 
 const ContactForm = ()=>{
+
+  
+
   return (
     <section className="form-container">
           <div className="gmaps">
@@ -9,7 +12,7 @@ const ContactForm = ()=>{
           <div className="form-contact">
             <div className="decorationCard1">{/*Component kosong Jangan Dihapus */}</div>
 
-            <form action="" className="form-isi" >
+            <form action="" className="form-isi" onSubmit={{}}>
               
               <label htmlFor="nama">NAMA</label>
               <input type="text" name="nama" id="nama" className="nama" placeholder="Your Name"/>
@@ -23,7 +26,7 @@ const ContactForm = ()=>{
               <label htmlFor="pesan">PESAN</label>
               <textarea name="pesan" id="pesan" cols="30" rows="10" placeholder="Message"></textarea>
 
-              <button className="btn-submit">SUBMIT</button>
+              <button className="btn-submit" type="submit">SUBMIT</button>
             </form>
           </div>
         </section>

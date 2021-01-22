@@ -40,12 +40,10 @@
 
 @media only screen and (max-width: 500px) {
   .heroTextProject h1{
-      font-size: 18pt;
+      font-size: 2.5rem;
       text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.6);
   }
-  .heroTextProject h3{
-      font-size: 12pt;
-  }
+
   .heroTextProject {
       padding:  0 5%;
   }
@@ -57,10 +55,7 @@
 
   }
   .heroTextProject h1{
-      font-size: 28pt;
+      font-size: 3rem;
   }
 
-  .heroTextProject h3{
-      font-size: 14pt;
-  }
 }

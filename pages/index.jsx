@@ -1,20 +1,17 @@
 import Head from 'next/head'
 import './Home.module.css'
 import Footer from '../components/footer/Footer'
-import Image from 'next/image'
 import Navbar from '../components/Navbar/Navbar'
-import HomeHeader from '../components/HomeHeader/HomeHeader'
-import HomeCard1 from '../components/HomeCard1/HomeCard1'
-import HomeServices from '../components/HomeServices/HomeServices'
-import HomeCard2 from '../components/HomeCard2/HomeCard2'
-import VisiMisi from '../components/VisiMisi/VisiMisi'
-import BusinessPartner from '../components/BusinessPartner/BusinessPartner'
-
+import HomeHeader from '../components/Home/HomeHeader/HomeHeader'
+import HomeCard1 from '../components/Home/HomeCard1/HomeCard1'
+import HomeServices from '../components/Home/HomeServices/HomeServices'
+import HomeCard2 from '../components/Home/.HomeCard2/HomeCard2'
 
 export default function Home() {
   return (<>
 
 
+    <div className="container">
       <Head>
         <title>PancaEkawiraSanjaya</title>
         <link rel="icon" href="/iconBrand.svg" />
@@ -25,30 +22,30 @@ export default function Home() {
       </Head>
 
       <main className="Home">
-        
+        <Navbar/>
         {/* HERO / HEADER PAGE PERUSAHAAN */}
 
         <HomeHeader />
 
+        <HomeCard1/>
+
         <div className="aboutServiceArea">
-        
-        <HomeCard1 />
-        <HomeServices />
-        <HomeCard2 />
-
-            
+          <HomeServices/>
+        {/* <HomeCard1 />
+        <HomeServices /> */}
+        {/* <HomeCard2 /> */}    
         </div>
-
-
         {/* VISI N MISI PERUSAHAAN */}
-        <VisiMisi />
 
-        {/* Business Partner */}
-        <BusinessPartner />
+        <div className="businessPartners">
+          <HomeCard2/>
+        </div>
     </main>
-      
 
+        <Footer/>
+    </div>
   <style jsx global>{`
+  @import url('https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
   html,
   body {

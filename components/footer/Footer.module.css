@@ -1,0 +1,45 @@
+.footer {
+  width: 100vw;
+  height: 50vh;
+  background-image: url(/public/backgroundFooter.svg);
+  background-color: #007cba4d;
+  display: flex;
+  color: white;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+}
+
+.footerKiri {
+  width: 44%;
+  height: 100%;
+  display: flex;
+  padding: 2.5% 4%;
+  flex-direction: column;
+}
+
+.PTpancaFooterText {
+  border-bottom: 3px solid whitesmoke;
+  padding: 10px;
+}
+
+.textFooter {
+  width: 380px;
+  padding: 10px;
+}
+
+.footerBawah {
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  background-color: #004469;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.footerTitle {
+  align-items: center;
+  font-size: 12.5pt;
+  font-weight: normal;
+}

@@ -10,28 +10,28 @@ function BusinessPartners() {
             <div className="imgContainerBusiness">
                 <div className="imgContainerBottom">
                     <Image
-                        src="/assets/logoPerusahaan/logoWeber.png"
+                        src="/Assets/logoPerusahaan/logoWeber.png"
                         alt="Picture of the author"
                         width="400px"
                         height="400px"
                     />
                     <Image
-                        src="/assets/logoPerusahaan/logoMilan.png"
-                        alt="Picture of the author"
-                        width="400px"
-                        height="400px"
-
-                    />
-                    <Image
-                        src="/assets/logoPerusahaan/logoShera.png"
+                        src="/Assets/logoPerusahaan/logoMilan.png"
                         alt="Picture of the author"
                         width="400px"
                         height="400px"
 
                     />
                     <Image
-                        src="/assets/logoPerusahaan/logoPaldeco.png"
+                        src="/Assets/logoPerusahaan/logoShera.png"
                         alt="Picture of the author"
+                        width="400px"
+                        height="400px"
+
+                    />
+                    <Image
+                        src="/Assets/logoPerusahaan/logoPaldeco.png"
+                        alt="Picture of the auth"
                         width="400px"
                         height="400px"
 

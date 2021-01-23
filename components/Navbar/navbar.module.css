@@ -6,17 +6,20 @@
     align-items: center;
     justify-content: flex-start;
     padding-left: 5%;
-    background-color:rgba(255, 251, 251, 0.9);
+    background-color:rgba(255, 251, 251);
     position: fixed;
     top: 0;
     z-index: 999;
   }
+
+  
 
   .imgGroups{
     width: auto;
     height: 100%;
     display: flex;
     align-items: center;
+    cursor: pointer;
   }
 
   .navLeft{

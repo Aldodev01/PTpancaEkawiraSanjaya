@@ -1,19 +1,18 @@
-import Head from 'next/head'
-import './Home.module.css'
-import Footer from '../components/footer/Footer'
-import Navbar from '../components/Navbar/Navbar'
-import HomeHeader from '../components/HomeHeader/HomeHeader'
-import HomeCard1 from '../components/HomeCard1/HomeCard1'
-import HomeServices from '../components/HomeServices/HomeServices'
-import HomeCard2 from '../components/HomeCard2/HomeCard2'
-import Visimisi from '../components/Visimisi/Visimisi'
-import BusinessPartner from '../components/BusinessPartner/BusinessPartner'
+import Head from 'next/head';
+import './Home.module.css';
+import Footer from '../components/footer/Footer';
+import Navbar from '../components/Navbar/Navbar';
+import HomeHeader from '../components/HomeHeader/HomeHeader';
+import Homecardone from '../components/Homecardone/Homecardone';
+import HomeServices from '../components/HomeServices/HomeServices';
+import HomeCard2 from '../components/HomeCard2/HomeCard2';
+// import Visimisi from '../components/Visimisi/Visimisi';
+import BusinessPartner from '../components/BusinessPartner/BusinessPartner';
 
 
 export default function Home() {
-  return (<>
-
-
+  return (
+  <>
       <Head>
         <title>PancaEkawiraSanjaya</title>
         <link rel="icon" href="/iconBrand.svg" />
@@ -31,7 +30,7 @@ export default function Home() {
 
         <div className="aboutServiceArea">
         
-        <HomeCard1 />
+        <Homecardone/>
         <HomeServices />
         <HomeCard2 />
 
@@ -39,8 +38,6 @@ export default function Home() {
         </div>
 
 
-        {/* VISI N MISI PERUSAHAAN */}
-        <Visimisi />
 
         {/* Business Partner */}
         <BusinessPartner />

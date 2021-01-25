@@ -1,7 +1,7 @@
 import './Homecardone.css'
 import Image from 'next/image'
 import { useState } from 'react'
-import { useEffect } from 'react/cjs/react.development'
+import { useEffect } from 'react'
 
 const Homecardone = () =>{
 
@@ -72,7 +72,7 @@ const Homecardone = () =>{
             {carousel.carousel1 && (
                 <>
                 <div className="cardLeft">
-                <span class="material-icons arrowLeft" onClick={()=>{
+                <span className="material-icons arrowLeft" onClick={()=>{
                     setCarousel({
                         carousel4 : true
                     })
@@ -88,7 +88,7 @@ const Homecardone = () =>{
             />
                 </div>
                 <div className="cardRight">
-                    <span class="material-icons arrowRight" onClick={()=>{
+                    <span className="material-icons arrowRight" onClick={()=>{
                         setCarousel({
                             carousel2 : true
                         })
@@ -126,7 +126,7 @@ const Homecardone = () =>{
                 {carousel.carousel2 && (
                 <>
                 <div className="cardLeft">
-                <span class="material-icons arrowLeft" onClick={()=>{setCarousel({
+                <span className="material-icons arrowLeft" onClick={()=>{setCarousel({
                     carousel1 : true
                 })}} >
                  keyboard_arrow_left
@@ -140,7 +140,7 @@ const Homecardone = () =>{
             />
                 </div>
                 <div className="cardRight">
-                    <span class="material-icons arrowRight" onClick={()=>{
+                    <span className="material-icons arrowRight" onClick={()=>{
                         setCarousel({
                             carousel3 : true
                         })
@@ -178,7 +178,7 @@ const Homecardone = () =>{
             {carousel.carousel3 && (
                 <>
                 <div className="cardLeft">
-                <span class="material-icons arrowLeft" onClick={()=>{setCarousel({
+                <span className="material-icons arrowLeft" onClick={()=>{setCarousel({
                     carousel2 : true
                 })}} >
                  keyboard_arrow_left
@@ -230,7 +230,7 @@ const Homecardone = () =>{
             {carousel.carousel4 && (
                 <>
                 <div className="cardLeft">
-                <span class="material-icons arrowLeft" onClick={()=>{setCarousel({
+                <span className="material-icons arrowLeft" onClick={()=>{setCarousel({
                     carousel3 : true
                 })}} >
                  keyboard_arrow_left
@@ -244,7 +244,7 @@ const Homecardone = () =>{
             />
                 </div>
                 <div className="cardRight">
-                    <span class="material-icons arrowRight" onClick={()=>{
+                    <span className="material-icons arrowRight" onClick={()=>{
                         setCarousel({
                             carousel1 : true
                         })

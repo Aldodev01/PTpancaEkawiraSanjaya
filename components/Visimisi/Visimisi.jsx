@@ -1,6 +1,6 @@
 import './VisiMisi.css'
 import Image from 'next/image'
-import { useState } from 'react/cjs/react.development'
+import { useState } from 'react'
 
 const Visimisi = () =>{
     const [visi, setVisi] = useState(true)

@@ -1,7 +1,7 @@
 import './HomeCard2.css'
 import Image from 'next/image'
 import { useState } from 'react'
-import { useEffect } from 'react/cjs/react.development'
+import { useEffect } from 'react'
 
 
 const Homecardone = () =>{

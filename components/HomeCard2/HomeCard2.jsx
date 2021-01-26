@@ -69,10 +69,24 @@ const HomeCard2 = () =>{
                 {carousel.carousel1 && (
                     <>
                     <div className="cardLeft2">
+                    <span className="material-icons arrowLeft" onClick={()=>{
+                    setCarousel({
+                        carousel4 : true
+                    })
+                }}>
+                 keyboard_arrow_left
+                </span>
                     <h1>Lorem Ipsum Dolor</h1>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque corrupti corporis reiciendis, earum optio voluptatibus sint rem autem. Ab dolorem sapiente distinctio quod, a maiores nobis iure soluta accusamus suscipit.</p>
                 </div>
                 <div className="cardRight2">
+                <span className="material-icons arrowRight" onClick={()=>{
+                        setCarousel({
+                            carousel2 : true
+                        })
+                    }}>
+                    keyboard_arrow_right
+                    </span>
                     <div className="decorationCard2">{/*Component kosong Jangan Dihapus */}</div>
             <Image
                 src="/Assets/rumah2.png"
@@ -108,10 +122,24 @@ const HomeCard2 = () =>{
                 {carousel.carousel2 && (
                     <>
                     <div className="cardLeft2">
+                    <span className="material-icons arrowLeft" onClick={()=>{
+                    setCarousel({
+                        carousel1 : true
+                    })
+                }}>
+                 keyboard_arrow_left
+                </span>
                     <h1>Lorem Ipsum Dolor2</h1>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque corrupti corporis reiciendis, earum optio voluptatibus sint rem autem. Ab dolorem sapiente distinctio quod, a maiores nobis iure soluta accusamus suscipit.</p>
                 </div>
                 <div className="cardRight2">
+                <span className="material-icons arrowRight" onClick={()=>{
+                        setCarousel({
+                            carousel3 : true
+                        })
+                    }}>
+                    keyboard_arrow_right
+                    </span>
                     <div className="decorationCard2">{/*Component kosong Jangan Dihapus */}</div>
             <Image
                 src="/Assets/rumah2.png"
@@ -147,10 +175,24 @@ const HomeCard2 = () =>{
                 {carousel.carousel3 && (
                     <>
                     <div className="cardLeft2">
+                    <span className="material-icons arrowLeft" onClick={()=>{
+                    setCarousel({
+                        carousel2 : true
+                    })
+                }}>
+                 keyboard_arrow_left
+                </span>
                     <h1>Lorem Ipsum Dolor3</h1>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque corrupti corporis reiciendis, earum optio voluptatibus sint rem autem. Ab dolorem sapiente distinctio quod, a maiores nobis iure soluta accusamus suscipit.</p>
                 </div>
                 <div className="cardRight2">
+                <span className="material-icons arrowRight" onClick={()=>{
+                        setCarousel({
+                            carousel4 : true
+                        })
+                    }}>
+                    keyboard_arrow_right
+                    </span>
                     <div className="decorationCard2">{/*Component kosong Jangan Dihapus */}</div>
             <Image
                 src="/Assets/rumah2.png"
@@ -186,10 +228,24 @@ const HomeCard2 = () =>{
             {carousel.carousel4 && (
                     <>
                     <div className="cardLeft2">
+                    <span className="material-icons arrowLeft" onClick={()=>{
+                    setCarousel({
+                        carousel3 : true
+                    })
+                }}>
+                 keyboard_arrow_left
+                </span>
                     <h1>Lorem Ipsum Dolor4</h1>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque corrupti corporis reiciendis, earum optio voluptatibus sint rem autem. Ab dolorem sapiente distinctio quod, a maiores nobis iure soluta accusamus suscipit.</p>
                 </div>
                 <div className="cardRight2">
+                <span className="material-icons arrowRight" onClick={()=>{
+                        setCarousel({
+                            carousel1 : true
+                        })
+                    }}>
+                    keyboard_arrow_right
+                    </span>
                     <div className="decorationCard2">{/*Component kosong Jangan Dihapus */}</div>
             <Image
                 src="/Assets/rumah2.png"

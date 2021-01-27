@@ -123,17 +123,11 @@ const Homecardone = () =>{
                 {carousel.carousel2 && (
                     <>
                     <div className="cardLeft2">
-<<<<<<< HEAD
-                    <span class="material-icons arrowLeft" onClick={()=>{setCarousel({
-                    carousel1 : true
-                })}} >
-=======
                     <span className="material-icons arrowLeft" onClick={()=>{
                     setCarousel({
                         carousel1 : true
                     })
                 }}>
->>>>>>> rangga
                  keyboard_arrow_left
                 </span>
                     <h1>Lorem Ipsum Dolor2</h1>

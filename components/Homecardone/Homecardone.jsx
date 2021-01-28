@@ -13,59 +13,59 @@ const Homecardone = () =>{
     })
 
 
-    // useEffect(()=>{
+    useEffect(()=>{
        
 
-    //     setTimeout(()=>{
-    //         setCarousel({
-    //             carousel2 : true
-    //         })
-    //     }, 10000)
+        setTimeout(()=>{
+            setCarousel({
+                carousel2 : true
+            })
+        }, 10000)
 
-    //     setTimeout(()=>{
-    //         setCarousel({
-    //             carousel3 : true
-    //         })
-    //     }, 20000)
+        setTimeout(()=>{
+            setCarousel({
+                carousel3 : true
+            })
+        }, 20000)
 
-    //     setTimeout(()=>{
-    //         setCarousel({
-    //             carousel4 : true
-    //         })
-    //     }, 30000)
+        setTimeout(()=>{
+            setCarousel({
+                carousel4 : true
+            })
+        }, 30000)
 
-    //     setTimeout(()=>{
-    //         setCarousel({
-    //             carousel1 : true
-    //         })
-    //     }, 40000)
+        setTimeout(()=>{
+            setCarousel({
+                carousel1 : true
+            })
+        }, 40000)
 
-    //     setTimeout(()=>{
-    //         setCarousel({
-    //             carousel2 : true
-    //         })
-    //     }, 50000)
+        setTimeout(()=>{
+            setCarousel({
+                carousel2 : true
+            })
+        }, 50000)
 
-    //     setTimeout(()=>{
-    //         setCarousel({
-    //             carousel3 : true
-    //         })
-    //     }, 60000)
+        setTimeout(()=>{
+            setCarousel({
+                carousel3 : true
+            })
+        }, 60000)
 
-    //     setTimeout(()=>{
-    //         setCarousel({
-    //             carousel4 : true
-    //         })
-    //     }, 70000)
+        setTimeout(()=>{
+            setCarousel({
+                carousel4 : true
+            })
+        }, 70000)
 
-    //     setTimeout(()=>{
-    //         setCarousel({
-    //             carousel1 : true
-    //         })
-    //     }, 80000)
+        setTimeout(()=>{
+            setCarousel({
+                carousel1 : true
+            })
+        }, 80000)
 
     
-    // },[])
+    },[])
 
     return(
         <div className="aboutCard">

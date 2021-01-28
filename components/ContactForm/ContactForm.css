@@ -1,5 +1,4 @@
-
-.form-container{
+.form-container {
   width: 100vw;
   height: auto;
   display: flex;
@@ -9,20 +8,19 @@
   gap: 30px;
 }
 
-.gmaps{
+.gmaps {
   width: 50vw;
   height: auto;
   border-radius: 10px;
 }
 
-.gmaps iframe{
+.gmaps iframe {
   width: 100%;
   height: 100%;
   border-radius: 10px;
-  
 }
 
-.form-contact{
+.form-contact {
   position: relative;
   width: 50vw;
   height: auto;
@@ -30,77 +28,76 @@
   flex-direction: column;
   padding: 3%;
   background-color: #ffffff;
-  border: 2px solid #4285F4;
+  border: 2px solid #4285f4;
   border-radius: 10px;
 }
 
-.decorationCard1{
+.form-contact .decorationCard1 {
   position: absolute;
   top: 0;
   left: 0;
   width: 10%;
   height: 100%;
-  box-shadow: inset 1.5vw 0 0 #4285F4;
+  box-shadow: inset 1.5vw 0 0 #4285f4;
   z-index: 20;
   border-radius: 7px 7px 7px 7px;
 }
 
-.form-isi{
+.form-isi {
   display: flex;
   flex-direction: column;
   gap: 10px;
   margin-left: 10px;
 }
 
-.form-isi input{
-  background: #FFFFFF;
+.form-isi input {
+  background: #ffffff;
   border: 1px solid rgba(0, 102, 255, 0.8);
   padding: 2%;
   border-radius: 10px;
 }
 
-.form-isi textarea{
-  background: #FFFFFF;
+.form-isi textarea {
+  background: #ffffff;
   border: 1px solid rgba(0, 102, 255, 0.8);
   padding: 2%;
   border-radius: 10px;
 }
 
-.btn-submit{
+.btn-submit {
   width: 100%;
   height: 50px;
-  background: #4285F4;
+  background: #4285f4;
   border-radius: 90px;
   color: white;
   border: none;
   margin-top: 10px;
 }
 
-@media only screen and (max-width:768px){
-  .form-container{
+@media only screen and (max-width: 768px) {
+  .form-container {
     width: 100vw;
     flex-direction: column;
   }
 
-  .gmaps{
+  .gmaps {
     width: 100%;
     height: 50vh;
   }
 
-  .form-contact{
+  .form-contact {
     width: 100%;
     padding: 8%;
   }
 
-  .decorationCard1{
+  .form-contact .decorationCard1 {
     display: flex;
-    box-shadow: inset 3vw 0 0 #4285F4;
-
+    box-shadow: inset 3vw 0 0 #4285f4;
   }
-  .form-isi{
+  .form-isi {
     margin-left: 5px;
   }
-  .form-isi input{
+  .form-isi input {
     border-radius: 8px;
   }
 }

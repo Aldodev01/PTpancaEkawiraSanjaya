@@ -1,9 +1,9 @@
-import './Homecardone.css'
+import './HomeCard1.css'
 import Image from 'next/image'
 import { useState } from 'react'
 import { useEffect } from 'react'
 
-const Homecardone = () =>{
+const HomeCard1 = () =>{
 
     const [carousel,setCarousel] = useState({
         carousel1 : true,
@@ -12,10 +12,7 @@ const Homecardone = () =>{
         carousel4 : false
     })
 
-
     useEffect(()=>{
-       
-
         setTimeout(()=>{
             setCarousel({
                 carousel2 : true
@@ -64,7 +61,6 @@ const Homecardone = () =>{
             })
         }, 80000)
 
-    
     },[])
 
     return(
@@ -122,7 +118,6 @@ const Homecardone = () =>{
                 </div>
                 </>
             )}
-
                 {carousel.carousel2 && (
                 <>
                 <div className="cardLeft">
@@ -169,12 +164,9 @@ const Homecardone = () =>{
                             })
                         }}></div>
                         <div className="blueDecoration"></div>
-
-
                 </div>
                 </>
             )}
-
             {carousel.carousel3 && (
                 <>
                 <div className="cardLeft">
@@ -221,12 +213,9 @@ const Homecardone = () =>{
                             })
                         }}></div>
                         <div className="blueDecoration"></div>
-
-
                 </div>
                 </>
             )}
-
             {carousel.carousel4 && (
                 <>
                 <div className="cardLeft">
@@ -273,15 +262,11 @@ const Homecardone = () =>{
                         }}></div>
                         <div className="buletCardUtama"></div>
                         <div className="blueDecoration"></div>
-
-
                 </div>
                 </>
             )}
-
-
         </div>
     )
 }
 
-export default Homecardone
+export default HomeCard1

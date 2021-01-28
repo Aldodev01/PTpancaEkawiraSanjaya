@@ -3,7 +3,7 @@ import './Home.module.css';
 import Footer from '../components/footer/Footer';
 import Navbar from '../components/Navbar/Navbar';
 import HomeHeader from '../components/HomeHeader/HomeHeader';
-import Homecardone from '../components/Homecardone/Homecardone';
+import HomeCard1 from '../components/HomeCard1/HomeCard1';
 import HomeServices from '../components/HomeServices/HomeServices';
 import HomeCard2 from '../components/HomeCard2/HomeCard2';
 // import Visimisi from '../components/Visimisi/Visimisi';
@@ -30,7 +30,7 @@ export default function Home() {
 
         <div className="aboutServiceArea">
         
-        <Homecardone/>
+        <HomeCard1/>
         <HomeServices />
         <HomeCard2 />
 

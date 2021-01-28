@@ -36,11 +36,11 @@ function Navbar() {
             </div>
 
             <div className="navRight">
-                <a href="/company-profile"><a><h3>COMPANY PROFILE</h3></a> </a>
+                <a href="/company-profile"><h3>COMPANY PROFILE</h3> </a>
                 <a href="/product"><h3>PRODUCT</h3></a>
                 <a href="/project"><h3>PROJECT</h3></a>
                <a href="/contact"> <h3>CONTACT</h3></a>
-                <a href="/e-commp"><h3>E-COMM PLAN</h3></a>
+                <a href="/e-comm"><h3>E-COMM PLAN</h3></a>
                 <i className="fas fa-search searchIconNoteBook"></i>
 
                     <form className="navSearch">

@@ -36,12 +36,13 @@
 
 .decorationCard1{
   position: absolute;
-  margin: -6.5%;
+  top: 0;
+  left: 0;
   width: 10%;
-  height: 101%;
+  height: 100%;
   box-shadow: inset 1.5vw 0 0 #4285F4;
   z-index: 20;
-  border-radius: 15px 15px 15px 15px;
+  border-radius: 7px 7px 7px 7px;
 }
 
 .form-isi{
@@ -93,7 +94,6 @@
 
   .decorationCard1{
     display: flex;
-    margin: -9%;
     box-shadow: inset 3vw 0 0 #4285F4;
 
   }

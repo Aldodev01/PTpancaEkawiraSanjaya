@@ -1,6 +1,32 @@
 import './ContactForm.css'
 
 const ContactForm = ()=>{
+
+
+  //buat sebuah hanldeLogin dan fetch ke api login
+  const handleForm = (e)=>{
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyA7vtH8tndRL06K92lwv5fH730W9IiWHqZd_PWJCfQOAaSlpij7OlT/exec'
+    const form = document.forms['google-sheet']
+    let btnsubmit = document.querySelector('.form-contact')
+    
+    e.preventDefault()
+    fetch(scriptURL, { 
+      method: 'POST', 
+      body: new FormData(form)
+    })
+    .then(response => 
+      btnsubmit.innerHTML = `
+      <h1 style="display:flex; align-items:center; justify-content: center;">Thanks for Contacting us..! We Will Contact You Soon...</h1>
+      `
+      )
+    .catch(error => 
+      console.error('Error!', error.message))
+    
+  }
+
+  
+  
+
   return (
     <section className="form-container">
           <div className="gmaps">
@@ -9,13 +35,13 @@ const ContactForm = ()=>{
           <div className="form-contact">
             <div className="decorationCard1">{/*Component kosong Jangan Dihapus */}</div>
 
-            <form action="" className="form-isi" >
+            <form action="" name="google-sheet" className="form-isi" onSubmit={handleForm}>
               
               <label htmlFor="nama">NAMA</label>
-              <input type="text" name="nama" id="nama" className="nama" placeholder="Your Name"/>
+              <input type="text" name="nama" id="nama" className="nama" placeholder="Your Name" />
 
               <label htmlFor="email">EMAIL</label>
-              <input type="text" name="email" id="email" className="email" placeholder="Your Email"/>
+              <input type="email" name="email" id="email" className="email" placeholder="Your Email"/>
 
               <label htmlFor="subject">SUBJECT</label>
               <input type="text" name="subject" id="subject" className="subject" placeholder="Your Subject"/>
@@ -23,7 +49,7 @@ const ContactForm = ()=>{
               <label htmlFor="pesan">PESAN</label>
               <textarea name="pesan" id="pesan" cols="30" rows="10" placeholder="Message"></textarea>
 
-              <button className="btn-submit">SUBMIT</button>
+              <button className="btn-submit" type="submit" >SUBMIT</button>
             </form>
           </div>
         </section>

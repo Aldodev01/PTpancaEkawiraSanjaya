@@ -49,6 +49,7 @@
 }
 
 .cardRight p{
+  text-align: justify;
 }
 
 .cardRight h1{
@@ -62,8 +63,13 @@
   .cardContent{
     width: 80vw;
     height: auto;
-    padding-bottom: 5%;
+    padding-bottom: 2%;
     flex-direction: column;
+  }
+
+
+  .cardRight{
+    padding: 5%;
   }
 
   .cardRight h1{
@@ -72,6 +78,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  .cardRight p{
+    font-size: 12pt;
   }
 
 

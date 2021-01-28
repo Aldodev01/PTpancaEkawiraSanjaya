@@ -18,7 +18,7 @@ const TabMenu = ({show}) =>{
                 window.location.href = "/contact"
             }}>CONTACT</h3>
             <h3 onClick={()=>{
-                window.location.href = "/ecommplan"
+                window.location.href = "/e-comm"
             }}>E-COMM PLAN</h3>
         </div>
     )

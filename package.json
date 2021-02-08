@@ -8,7 +8,6 @@
     "start": "next start"
   },
   "dependencies": {
-    "@pdftron/webviewer": "^7.2.0",
     "@zeit/next-css": "^1.0.1",
     "@zeit/next-sass": "^1.0.1",
     "next": "^10.0.5",

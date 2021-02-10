@@ -1,5 +1,9 @@
 import React from 'react'
+<<<<<<< HEAD
 import Head from 'next/head'
+=======
+import Head from 'next/head';
+>>>>>>> fathurzoy
 
 import ContactForm from '../../components/ContactForm/ContactForm'
 import ContactHeader from '../../components/ContactHeader/ContactHeader'
@@ -10,7 +14,11 @@ import './style.css'
 const index = () => {
   return (
     <>
+<<<<<<< HEAD
       <Head>
+=======
+    <Head>
+>>>>>>> fathurzoy
         <title>PancaEkawiraSanjaya</title>
         <link rel="icon" href="/iconBrand.svg" />
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -20,7 +28,10 @@ const index = () => {
         <meta name="description" content="PT Panca Ekawira Sanjaya"/>
 
       </Head>
+<<<<<<< HEAD
 
+=======
+>>>>>>> fathurzoy
       <Layout>
       <ContactHeader />
       <main className="contact">

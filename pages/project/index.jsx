@@ -1,7 +1,7 @@
 import React from 'react'
-import Footer from '../../components/footer/Footer'
+import Head from 'next/head';
+
 import Layout from '../../components/Layout'
-import Navbar from '../../components/Navbar/Navbar'
 import ProjectCard from '../../components/ProjectCard/ProjectCard'
 import ProjectHeader from '../../components/ProjectHeader/ProjectHeader'
 import './style.css'
@@ -9,6 +9,16 @@ import './style.css'
 const index = () =>{
   return (
     <>
+      <Head>
+        <title>PancaEkawiraSanjaya</title>
+        <link rel="icon" href="/iconBrand.svg" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet"></link>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossOrigin="anonymous"></link>
+        <meta property="og:image" content="/Assets/hero.png" />
+        <meta name="description" content="PT Panca Ekawira Sanjaya"/>
+
+      </Head>
       <Layout>
 
       <ProjectHeader/>

@@ -6,7 +6,7 @@ const ProjectHeader=()=>{
       <div className="heroTextProject">
         <h1>Project</h1>
       </div>
-      <img src="/imgProject.svg" alt="Picture of the author" className="imgHeader"/>
+      <img src="/imgProject.jpg" alt="Picture of the author" className="imgHeader"/>
 
     </div>
   )

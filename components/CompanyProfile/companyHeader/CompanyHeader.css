@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap');
+
 .companyHeader{
     width: 100vw;
     position: relative;
     height: 70vh;
-    margin-top: 120px;
+    margin-top: 13vh;
 }
 
 .darkEffect{
@@ -42,14 +44,14 @@
 
 @media only screen and (max-width : 500px) {
     .companyTextHeader{
-        font-size: 2.5rem;
+        font-size: 45pt;
     }
 
     .companyHeader{
         width: 100vw;
         position: relative;
         height: 45vh;
-        margin-top: 85px;
+        margin-top: 13vh;
     }
 }
 

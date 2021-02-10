@@ -10,17 +10,8 @@
 .businessPartnersText{
     text-align: center;
     margin-top: 50px;
-    font-size: 5rem;
+    font-size: 45pt;
 }
-
-.imgContainerBusiness{
-    width: 100vw;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .imgContainerBottom{
     width: 100%;
     height: auto;
@@ -29,6 +20,7 @@
     justify-content: center;
     align-items: center;
     padding: 0 10%;
+    gap: 20px;
 }
 
 @media only screen and (max-width : 500px) {
@@ -38,5 +30,9 @@
         flex-direction: column;
         display: flex;
         position: relative;
-    }   
+    }
+    
+    .businessPartnersText{
+        font-size: 35pt;
+    }
 }

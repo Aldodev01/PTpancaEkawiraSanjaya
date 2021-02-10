@@ -2,7 +2,7 @@
     width: 100vw;
     position: relative;
     height: 70vh;
-    margin-top: 120px;
+    margin-top: 13vh;
 }
 
 .darkEffect{
@@ -41,7 +41,7 @@
 
 @media only screen and (max-width : 500px) {
     .productTextHeader{
-        font-size: 1.5rem;
+        font-size: 45pt;
     }
 
     .productHeader{
@@ -61,7 +61,7 @@
         width: 100vw;
         position: relative;
         height: 40vh;
-        margin-top: 85px;
+        margin-top: 13vh;
     }
 }
 

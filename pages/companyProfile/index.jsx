@@ -5,6 +5,7 @@ import CompanyContainer from '../../components/CompanyProfile/companyContainer.j
 import CompanyHeader from '../../components/CompanyProfile/companyHeader/CompanyHeader'
 import Footer from '../../components/footer/Footer'
 import Navbar from '../../components/Navbar/Navbar'
+import Bussiness from '../../components/businessPartners/BusinessPartners'
 
 
 function CompanyProfile() {
@@ -32,7 +33,7 @@ function CompanyProfile() {
             </div>
 
             <div className="businessPartners">
-                <BusinessPartners/>
+                <Bussiness/>
             </div>
 
            <Footer/>

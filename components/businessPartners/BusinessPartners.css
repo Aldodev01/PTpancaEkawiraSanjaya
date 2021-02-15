@@ -2,9 +2,9 @@
     width: 100%;
     height: auto;
     justify-content: center;
-    text-align: center;
     display: flex;
     flex-direction: column;
+    box-shadow: inset 1.5vw 0 0 #d12635;
 }
 
 .businessPartnersText{
@@ -12,15 +12,25 @@
     margin-top: 50px;
     font-size: 45pt;
 }
-.imgContainerBottom{
-    width: 100%;
+
+.imgContainerBusiness{
+    width: 100vw;
     height: auto;
     display: flex;
-    position: relative;
+}
+
+.image1{
+
+}
+
+.image2{
+    isplay: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 10%;
-    gap: 20px;
+}
+
+.image3{
+    
 }
 
 @media only screen and (max-width : 500px) {
